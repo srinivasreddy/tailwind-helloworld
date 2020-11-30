@@ -1,9 +1,8 @@
 In this tutorial I will explain the setup for tailwindcss 2.0.1. I found the documentation is hard to follow and Adam's YouTube [video](https://www.youtube.com/watch?v=21HuwjmuS7A) kind of outdated.
 
-First, create a directory with your project name, here I created 
-a project named prototype.
+First, create a directory with your project name, here I created a project named `tailwind-helloworld`.
 ```bash
-mkdir prototype 
+mkdir tailwind-helloworld 
 ```
 Run the npm command - `npm init -y`  to create a package.json with defaults.
 
@@ -31,12 +30,11 @@ module.exports = {
 
 ```npx tailwindcss init``` will initialise tailwindcss configuration.
 Include the build command in package.json, and execute `npm run build`. 
-```"scripts": {
+```json
+"scripts": {
     "build": "postcss src/css/*.css -o dist/css/compiled.css"
   }
 ```
 That's it!!!!
+
 You are good to reference build css file in your html code.
-
-You can find the code repository [here](https://github.com/srinivasreddy/tailwind-helloworld)
-
